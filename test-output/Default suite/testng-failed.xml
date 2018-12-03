@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <parameter name="l_string" value="Pressematerialien"/>
+  <parameter name="fname" value="Mirinda"/>
+  <parameter name="lname" value="Cooper"/>
+  <parameter name="phone" value="00478674830275"/>
+  <parameter name="cname" value="Xeneta"/>
+  <parameter name="screenshot_loc" value="c:/xeneta/xenetademo/snapshots/"/>
+  <parameter name="language" value="Deutsch"/>
+  <parameter name="title" value="Sales Executive"/>
+  <parameter name="url" value="https://www.xeneta.com/media-resources"/>
+  <parameter name="email" value="mirinda@google.com"/>
+  <test name="Xeneta_Request_Demo(failed)">
+    <parameter name="fname" value="Mirinda"/>
+    <parameter name="lname" value="Cooper"/>
+    <parameter name="phone" value="00478674830275"/>
+    <parameter name="cname" value="Xeneta"/>
+    <parameter name="screenshot_loc" value="c:/xeneta/xenetademo/snapshots/"/>
+    <parameter name="title" value="Sales Executive"/>
+    <parameter name="url" value="https://www.xeneta.com/test-request-xeneta-demo"/>
+    <parameter name="email" value="mirinda@google.com"/>
+    <classes>
+      <class name="demotests.XenetaMediaResourcesPage">
+        <methods>
+          <include name="cleanup"/>
+          <include name="initDriver"/>
+        </methods>
+      </class> <!-- demotests.XenetaMediaResourcesPage -->
+      <class name="demotests.XenetaRequestDemoPage">
+        <methods>
+          <include name="cleanup"/>
+          <include name="initDriver"/>
+          <include name="testPhoneField"/>
+        </methods>
+      </class> <!-- demotests.XenetaRequestDemoPage -->
+    </classes>
+  </test> <!-- Xeneta_Request_Demo(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

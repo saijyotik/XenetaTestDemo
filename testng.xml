@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default suite">
+  <test verbose="2" name="Xeneta_Request_Demo">
+  <parameter name="url" value="https://www.xeneta.com/test-request-xeneta-demo"/>
+  <parameter name="fname" value="Mirinda"/>
+  <parameter name="lname" value="Cooper"/>
+  <parameter name="cname" value="Xeneta"/>
+  <parameter name="title" value="Sales Executive"/>
+  <parameter name="email" value="mirinda@google.com"/>
+  <parameter name="phone" value="00478674830275"/>
+  <parameter name="screenshot_loc" value="c:/xeneta/xenetademo/snapshots/"/>
+    <classes>
+      <class name="demotests.XenetaRequestDemoPage"/>
+    </classes>
+  </test> <!-- Xeneta_demo -->
+  <test verbose="2" name="Xeneta_Media_Resources">
+  <parameter name="url" value="https://www.xeneta.com/media-resources"/>
+  <parameter name="language" value="Deutsch"/>
+  <parameter name="l_string" value="Pressematerialien"/>
+  <parameter name="screenshot_loc" value="c:/xeneta/xenetademo/snapshots/"/>
+  
+     <classes>
+       <class name="demotests.XenetaMediaResourcesPage"/>
+     </classes>
+   </test> <!-- Media_Resources -->
+</suite> <!-- Default suite -->
